@@ -1,0 +1,36 @@
+/* Custom CSS for gradients and fonts */
+body {
+  font-family: 'Inter', sans-serif;
+  background: #111827; /* Fallback for older browsers */
+  background: linear-gradient(135deg, #111827, #1F2937);
+  color: #E5E7EB;
+  scroll-behavior: smooth;
+}
+
+/* Custom styles for the cool gradient button */
+.cool-button {
+  background-size: 200% auto;
+  transition: background-position 0.3s ease-out;
+}
+
+.cool-button:hover {
+  background-position: right center;
+}
+
+/* Custom scrollbar for a better user experience */
+.swiper-scrollbar-drag {
+  background: #6EE7B7 !important;
+}
+
+/* Fade-in animation for scroll effect */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+

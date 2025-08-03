@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christian Bahan Portfolio</title>
+  
+  <!-- Inter font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for social and navigation icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Devicons for skills section -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  
+  <!-- Swiper.js for the project carousel -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom CSS file link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="selection:bg-teal-300 selection:text-teal-900">
+  
+  <!-- Header and Navigation -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-gray-900/50 backdrop-blur-md">
+    <nav class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+      <!-- Logo -->
+      <a href="#about-section" class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-sky-500 hover:scale-105 transition-transform" aria-label="Home">
+        CB.
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex space-x-8 text-lg font-medium">
+        <a href="#about-section" class="text-gray-300 hover:text-white transition-colors duration-300">About</a>
+        <a href="#projects-section" class="text-gray-300 hover:text-white transition-colors duration-300">Projects</a>
+        <a href="#skills-section" class="text-gray-300 hover:text-white transition-colors duration-300">Skills</a>
+        <a href="#certifications-section" class="text-gray-300 hover:text-white transition-colors duration-300">Certifications</a>
+        <a href="#leave-message-section" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+      </div>
+      
+      <!-- Mobile Navigation Toggle -->
+      <button id="mobile-menu-btn" class="md:hidden text-2xl text-gray-300 hover:text-white transition-colors duration-300">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-900/90 backdrop-blur-md">
+      <div class="flex flex-col items-center py-4 space-y-4 text-xl">
+        <a href="#about-section" class="w-full text-center py-2 hover:bg-gray-700 transition-colors duration-300">About</a>
+        <a href="#projects-section" class="w-full text-center py-2 hover:bg-gray-700 transition-colors duration-300">Projects</a>
+        <a href="#skills-section" class="w-full text-center py-2 hover:bg-gray-700 transition-colors duration-300">Skills</a>
+        <a href="#certifications-section" class="w-full text-center py-2 hover:bg-gray-700 transition-colors duration-300">Certifications</a>
+        <a href="#leave-message-section" class="w-full text-center py-2 hover:bg-gray-700 transition-colors duration-300">Contact</a>
+      </div>
+    </div>
+  </header>
+  
+  <main class="pt-24 max-w-7xl mx-auto p-6 space-y-24">
+    
+    <!-- About Section -->
+    <section id="about-section" class="flex flex-col items-center text-center space-y-8">
+      <h2 class="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-sky-500 leading-tight">Hello World!</h2>
+      
+      <!-- Centered Headshot -->
+      <div class="headshot w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-2xl ring-4 ring-gray-600 transition-transform hover:scale-105 duration-300">
+        <img src="images\headshot.png" alt="Christian Bahan headshot" class="w-full h-full object-cover">
+      </div>
+      
+      <!-- Bio -->
+      <div class="bio max-w-3xl space-y-4 text-lg md:text-xl font-light text-gray-300 leading-relaxed">
+        <p>I am Christian Bahan, a recent IT undergraduate with experience in web development and web design.</p>
+        <p>I served as a Junior Web Developer (CMS based) during my OJT, maintaining websites and handling content updates. My capstone project was an E-learning platform (Visual Basic 6 + MS Access) featuring login, enrollment, and progress tracking.</p>
+      </div>
+      
+      <!-- Social Links -->
+      <div class="social-links flex space-x-6 text-3xl md:text-4xl">
+        <a href="https://www.instagram.com/anayyany.28/" target="_blank" class="text-pink-500 hover:scale-125 transition-transform" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/maxxlr8b69/" target="_blank" class="text-blue-500 hover:scale-125 transition-transform" aria-label="Facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/christian-bahan-425477188/" target="_blank" class="text-blue-600 hover:scale-125 transition-transform" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/chrisbahan" target="_blank" class="text-gray-400 hover:text-white hover:scale-125 transition-transform" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects-section" class="space-y-12">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-center text-gray-100">Projects</h2>
+      
+      <!-- Software Projects -->
+      <div class="space-y-6 fade-in">
+        <h3 class="text-2xl md:text-3xl font-bold text-gray-200">Software</h3>
+        <div class="swiper card-swiper rounded-2xl p-4 md:p-8 bg-gray-800 shadow-2xl">
+          <div class="swiper-wrapper">
+            <!-- Project Slide 1 -->
+            <div class="swiper-slide p-4 bg-gray-900 rounded-xl shadow-lg transition-transform hover:scale-105 duration-300">
+              <a href="images\VB\ilearn.png" target="_blank" class="block space-y-4" aria-label="View E-learning Platform project">
+                <img src="images\VB\ilearn.png" alt="ILearn" class="w-full h-auto rounded-lg">
+                <div class="text-center">
+                  <h4 class="text-xl font-semibold text-white">ILearn Landing Page</h4>
+                  <h5 class="text-sm italic text-gray-400">Visual Basic 6.0, MS Access</h5>
+                  <p class="text-gray-300 mt-2 text-sm">Desktop educational platform featuring login, enrollment, and progress tracking.</p>
+                </div>
+              </a>
+            </div>
+          <!-- Project Slide 2 -->
+            <div class="swiper-slide p-4 bg-gray-900 rounded-xl shadow-lg transition-transform hover:scale-105 duration-300">
+              <a href="images\VB\ilearnreg.png" target="_blank" class="block space-y-4" aria-label="View E-learning Platform project">
+                <img src="images\VB\ilearnreg.png" alt="ILearn" class="w-full h-auto rounded-lg">
+                <div class="text-center">
+                  <h4 class="text-xl font-semibold text-white">ILearn Register</h4>
+                  <h5 class="text-sm italic text-gray-400">Visual Basic 6.0, MS Access</h5>
+                  <p class="text-gray-300 mt-2 text-sm">Desktop educational platform featuring login, enrollment, and progress tracking.</p>
+                </div>
+              </a>
+            </div>
+            <!-- Project Slide 3 -->
+            <div class="swiper-slide p-4 bg-gray-900 rounded-xl shadow-lg transition-transform hover:scale-105 duration-300">
+              <a href="images\VB\ilearnstart.png" target="_blank" class="block space-y-4" aria-label="View E-learning Platform project">
+                <img src="images\VB\ilearnstart.png" alt="Software Project 1" class="w-full h-auto rounded-lg">
+                <div class="text-center">
+                  <h4 class="text-xl font-semibold text-white">ILearn Login</h4>
+                  <h5 class="text-sm italic text-gray-400">Visual Basic 6.0, MS Access</h5>
+                  <p class="text-gray-300 mt-2 text-sm">Desktop educational platform featuring login, enrollment, and progress tracking.</p>
+                </div>  
+              </a>
+            </div>
+            <!-- Project Slide 4 -->
+            <div class="swiper-slide p-4 bg-gray-900 rounded-xl shadow-lg transition-transform hover:scale-105 duration-300">
+              <a href="images\VB\ilearnins.png" target="_blank" class="block space-y-4" aria-label="View E-learning Platform project">
+                <img src="images\VB\ilearnins.png" alt="ILearn" class="w-full h-auto rounded-lg">
+                <div class="text-center">
+                  <h4 class="text-xl font-semibold text-white">Instructor Login</h4>
+                  <h5 class="text-sm italic text-gray-400">Visual Basic 6.0, MS Access</h5>
+                  <p class="text-gray-300 mt-2 text-sm">Desktop educational platform featuring login, enrollment, and progress tracking.</p>
+                </div>
+              </a>
+            </div>
+          <!-- Project Slide 5 -->
+            <div class="swiper-slide p-4 bg-gray-900 rounded-xl shadow-lg transition-transform hover:scale-105 duration-300">
+              <a href="images\VB\ilearninsd.png" target="_blank" class="block space-y-4" aria-label="View E-learning Platform project">
+                <img src="images\VB\ilearninsd.png" alt="ILearn" class="w-full h-auto rounded-lg">
+                <div class="text-center">
+                  <h4 class="text-xl font-semibold text-white">Instructor Dashboard</h4>
+                  <h5 class="text-sm italic text-gray-400">Visual Basic 6.0, MS Access</h5>
+                  <p class="text-gray-300 mt-2 text-sm">Desktop educational platform featuring login, enrollment, and progress tracking.</p>
+                </div>
+              </a>
+            </div>
+          <!-- Project Slide 6 -->
+            <div class="swiper-slide p-4 bg-gray-900 rounded-xl shadow-lg transition-transform hover:scale-105 duration-300">
+              <a href="images\VB\ilearnlearn.png" target="_blank" class="block space-y-4" aria-label="View E-learning Platform project">
+                <img src="images\VB\ilearnlearn.png" alt="ILearn" class="w-full h-auto rounded-lg">
+                <div class="text-center">
+                  <h4 class="text-xl font-semibold text-white">Learners Dashboard</h4>
+                  <h5 class="text-sm italic text-gray-400">Visual Basic 6.0, MS Access</h5>
+                  <p class="text-gray-300 mt-2 text-sm">Desktop educational platform featuring login, enrollment, and progress tracking.</p>
+                </div>
+              </a>
+            </div>
+          <!-- Project Slide 7 -->
+            <div class="swiper-slide p-4 bg-gray-900 rounded-xl shadow-lg transition-transform hover:scale-105 duration-300">
+              <a href="images\VB\ilearnup.png" target="_blank" class="block space-y-4" aria-label="View E-learning Platform project">
+                <img src="images\VB\ilearnup.png" alt="ILearn" class="w-full h-auto rounded-lg">
+                <div class="text-center">
+                  <h4 class="text-xl font-semibold text-white">ILearn Startup</h4>
+                  <h5 class="text-sm italic text-gray-400">Visual Basic 6.0, MS Access</h5>
+                  <p class="text-gray-300 mt-2 text-sm">Desktop educational platform featuring login, enrollment, and progress tracking.</p>
+                </div>
+              </a>
+            </div>
+          <!-- Project Slide 8 -->
+            <div class="swiper-slide p-4 bg-gray-900 rounded-xl shadow-lg transition-transform hover:scale-105 duration-300">
+              <a href="images\VB\ilearnabout.png" target="_blank" class="block space-y-4" aria-label="View E-learning Platform project">
+                <img src="images\VB\ilearnabout.png" alt="ILearn" class="w-full h-auto rounded-lg">
+                <div class="text-center">
+                  <h4 class="text-xl font-semibold text-white">ILearn About Page</h4>
+                  <h5 class="text-sm italic text-gray-400">Visual Basic 6.0, MS Access</h5>
+                  <p class="text-gray-300 mt-2 text-sm">Desktop educational platform featuring login, enrollment, and progress tracking.</p>
+                </div>
+              </a>
+            </div>
+          <!-- Project Slide 9 -->
+            <div class="swiper-slide p-4 bg-gray-900 rounded-xl shadow-lg transition-transform hover:scale-105 duration-300">
+              <a href="images\VB\ilearncontact.png" target="_blank" class="block space-y-4" aria-label="View E-learning Platform project">
+                <img src="images\VB\ilearncontact.png" alt="ILearn" class="w-full h-auto rounded-lg">
+                <div class="text-center">
+                  <h4 class="text-xl font-semibold text-white">ILearn Contact</h4>
+                  <h5 class="text-sm italic text-gray-400">Visual Basic 6.0, MS Access</h5>
+                  <p class="text-gray-300 mt-2 text-sm">Desktop educational platform featuring login, enrollment, and progress tracking.</p>
+                </div>
+              </a>
+            </div>          
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+      
+      <hr class="border-gray-700">
+      
+      <!-- Internship Projects -->
+      <div class="space-y-6">
+        <h3 class="text-2xl md:text-3xl font-bold text-gray-200">Internship Projects (WordPress/Elementor)</h3>
+        <div class="swiper internship-projects-swiper rounded-2xl p-4 md:p-8 bg-gray-800 shadow-2xl">
+          <div class="swiper-wrapper">
+            <!-- Project Slides -->
+            <div class="swiper-slide p-4 bg-gray-900 rounded-xl shadow-lg transition-transform hover:scale-105 duration-300">
+              <a href="https://speedreadingcoursesz.com/" target="_blank" class="block space-y-4" aria-label="View Speed Reading Courses Z project">
+                <img src="images\WORDPRESS\speedreadingcourses.PNG" alt="speedreadingcoursesz" class="w-full h-auto rounded-lg"/>
+                <div class="text-center">
+                  <h4 class="text-xl font-semibold text-white">Speed Reading Courses</h4>
+                  <h5 class="text-sm italic text-gray-400">WordPress, Elementor</h5>
+                  <p class="text-gray-300 mt-2 text-sm">Website developed and maintained during internship.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide p-4 bg-gray-900 rounded-xl shadow-lg transition-transform hover:scale-105 duration-300">
+              <a href="https://pinnacleminds.com.sg/" target="_blank" class="block space-y-4" aria-label="View Pinnacle Minds (SG) project">
+                <img src="images\WORDPRESS\memorytrainingcoursessg.PNG" alt="speedreadingcoursesz" class="w-full h-auto rounded-lg"/>
+                <div class="text-center">
+                  <h4 class="text-xl font-semibold text-white">Memory Training Courses</h4>
+                  <h5 class="text-sm italic text-gray-400">WordPress, Elementor</h5>
+                  <p class="text-gray-300 mt-2 text-sm">Website developed and maintained during internship.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide p-4 bg-gray-900 rounded-xl shadow-lg transition-transform hover:scale-105 duration-300">
+              <a href="https://memory.sg/memory-training-courses-worldwide/" target="_blank" class="block space-y-4" aria-label="View Memory.sg - Memory Training Courses Worldwide project">
+                <img src="images\WORDPRESS\memorytrainingcoursesww.PNG" alt="speedreadingcoursesz" class="w-full h-auto rounded-lg"/>
+                <div class="text-center">
+                  <h4 class="text-xl font-semibold text-white">Memory Training Courses Worldwide</h4>
+                  <h5 class="text-sm italic text-gray-400">WordPress, Elementor</h5>
+                  <p class="text-gray-300 mt-2 text-sm">Website developed and maintained during internship.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide p-4 bg-gray-900 rounded-xl shadow-lg transition-transform hover:scale-105 duration-300">
+              <a href="https://memorycourses.sg/" target="_blank" class="block space-y-4" aria-label="View Memory Courses (SG) project">
+                <img src="images\WORDPRESS\memorycoursessg.PNG" alt="speedreadingcoursesz" class="w-full h-auto rounded-lg"/>
+                <div class="text-center">
+                  <h4 class="text-xl font-semibold text-white">Memory Courses (SG)</h4>
+                  <h5 class="text-sm italic text-gray-400">WordPress, Elementor</h5>
+                  <p class="text-gray-300 mt-2 text-sm">Website developed and maintained during internship.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide p-4 bg-gray-900 rounded-xl shadow-lg transition-transform hover:scale-105 duration-300">
+              <a href="https://memoryclasses.com//" target="_blank" class="block space-y-4" aria-label="View Memory Courses (SG) project">
+                <img src="images\WORDPRESS\memoryclasses.PNG" alt="speedreadingcoursesz" class="w-full h-auto rounded-lg"/>
+                <div class="text-center">
+                  <h4 class="text-xl font-semibold text-white">Memory Classes</h4>
+                  <h5 class="text-sm italic text-gray-400">WordPress, Elementor</h5>
+                  <p class="text-gray-300 mt-2 text-sm">Website developed and maintained during internship.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide p-4 bg-gray-900 rounded-xl shadow-lg transition-transform hover:scale-105 duration-300">
+              <a href="https://pinnacleminds.sg/memory-training-courses-worldwide/" target="_blank" class="block space-y-4" aria-label="View Memory Courses (SG) project">
+                <img src="images\WORDPRESS\memoryimprovementcoursessg.PNG" alt="speedreadingcoursesz" class="w-full h-auto rounded-lg"/>
+                <div class="text-center">
+                  <h4 class="text-xl font-semibold text-white">Memory Improvement Courses</h4>
+                  <h5 class="text-sm italic text-gray-400">WordPress, Elementor</h5>
+                  <p class="text-gray-300 mt-2 text-sm">Website developed and maintained during internship.</p>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+      
+      <hr class="border-gray-700">
+      
+      <!-- Personal Projects -->
+      <div class="space-y-6 fade-in">
+        <h3 class="text-2xl md:text-3xl font-bold text-gray-200">Personal Projects (WYSIWYG Website Builder)</h3>
+        <div class="swiper personal-projects-swiper rounded-2xl p-4 md:p-8 bg-gray-800 shadow-2xl">
+          <div class="swiper-wrapper">
+            <!-- Project Slides -->
+            <div class="swiper-slide p-4 bg-gray-900 rounded-xl shadow-lg transition-transform hover:scale-105 duration-300">
+              <a href="http://avtech.onlinewebshop.net/index.html" target="_blank" class="block space-y-4" aria-label="View AVTech project">
+                <img src="images\WYSIWYG\avtech.png" alt="AVTech" class="w-full h-auto rounded-lg"/>
+                <div class="text-center">
+                  <h4 class="text-xl font-semibold text-white">AVTech</h4>
+                  <h5 class="text-sm italic text-gray-400">WYSIWYG Website Builder</h5>
+                  <p class="text-gray-300 mt-2 text-sm">Personal project demonstrating website building skills.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide p-4 bg-gray-900 rounded-xl shadow-lg transition-transform hover:scale-105 duration-300">
+              <a href="https://kutsu.onlinewebshop.net/index.html" target="_blank" class="block space-y-4" aria-label="View Kutsu project">
+                <img src="images\WYSIWYG\kutsu.png" alt="Kutsu" class="w-full h-auto rounded-lg"/>
+                <div class="text-center">
+                  <h4 class="text-xl font-semibold text-white">Kutsu</h4>
+                  <h5 class="text-sm italic text-gray-400">WYSIWYG Website Builder</h5>
+                  <p class="text-gray-300 mt-2 text-sm">Personal project demonstrating website building skills.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide p-4 bg-gray-900 rounded-xl shadow-lg transition-transform hover:scale-105 duration-300">
+              <a href="http://coollrb.atwebpages.com/" target="_blank" class="block space-y-4" aria-label="View Cool project">
+                <img src="images\WYSIWYG\cool.png" alt="Cool" class="w-full h-auto rounded-lg"/>
+                <div class="text-center">
+                  <h4 class="text-xl font-semibold text-white">Cool</h4>
+                  <h5 class="text-sm italic text-gray-400">WYSIWYG Website Builder</h5>
+                  <p class="text-gray-300 mt-2 text-sm">Personal project demonstrating website building skills.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+      
+      <hr class="border-gray-700">
+      
+      <!-- Technical Exam Project -->
+      <div class="space-y-6 fade-in">
+        <h3 class="text-2xl md:text-3xl font-bold text-gray-200">Technical Exam Project (Duda Website Builder)</h3>
+        <div class="swiper technical-projects-swiper rounded-2xl p-4 md:p-8 bg-gray-800 shadow-2xl">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide p-4 bg-gray-900 rounded-xl shadow-lg transition-transform hover:scale-105 duration-300">
+              <a href="https://preview.duda.co/preview/fd36fb0b?t=1753171418366" target="_blank" class="block space-y-4" aria-label="View Duda Technical Exam Site project">
+                <img src="images\DUDA\lunasecret.png" alt="LunaSecret" class="w-full h-auto rounded-lg"/>
+                <div class="text-center">
+                  <h4 class="text-xl font-semibold text-white">Duda Technical Exam Site</h4>
+                  <h5 class="text-sm italic text-gray-400">Duda Website Builder</h5>
+                  <p class="text-gray-300 mt-2 text-sm">Project completed during a technical examination.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills-section" class="space-y-12 text-center">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100">Skills</h2>
+      <div class="skills-container flex flex-wrap justify-center items-center gap-8 md:gap-12 text-4xl md:text-5xl text-gray-400">
+        <i class="devicon-html5-plain hover:text-orange-500 transition-colors" title="HTML5" aria-label="HTML5"></i>
+        <i class="devicon-css3-plain hover:text-blue-500 transition-colors" title="CSS3" aria-label="CSS3"></i>
+        <i class="devicon-javascript-plain hover:text-yellow-400 transition-colors" title="JavaScript" aria-label="JavaScript"></i>
+        <i class="fa-brands fa-wordpress hover:text-blue-400 transition-colors" title="WordPress" aria-label="WordPress"></i>
+        <i class="fa-brands fa-elementor hover:text-green-500 transition-colors" title="Elementor" aria-label="Elementor"></i>
+        <i class="fa-solid fa-code hover:text-purple-500 transition-colors" title="Visual Basic 6.0" aria-label="Visual Basic 6.0"></i>
+        <i class="fa-solid fa-square-pen hover:text-sky-500 transition-colors" title="WYSIWYG Builder" aria-label="WYSIWYG Website Builder"></i>
+      </div>
+    </section>  
+    <!-- Certifications Section -->
+<section id="certifications-section" class="space-y-12 fade-in">
+  <h2 class="text-4xl md:text-5xl font-extrabold text-center text-gray-100">Certifications</h2>
+
+  <div class="space-y-16">
+    <!-- Certificate 1 -->
+    <div class="cert-card flex flex-col md:flex-row items-center md:items-start gap-8 fade-in">
+      <img src="images/Certificates/VOC. CERTIFICATE.jpg" alt="Certificate of Training in Graphic Arts" class="w-full md:w-1/2 rounded-lg shadow-xl" />
+      <div class="text-gray-300 text-center md:text-left space-y-2">
+        <h4 class="text-2xl font-semibold text-white">Graphic Arts Training</h4>
+        <p class="text-sm italic text-gray-400">Certificate of Training</p>
+        <p class="text-base">Completed Graphic Design fundamentals with focus on digital arts and layout.</p>
+      </div>
+    </div>
+
+    <!-- Certificate 2 -->
+    <div class="cert-card flex flex-col md:flex-row-reverse items-center md:items-start gap-8 fade-in">
+      <img src="images/Certificates/COE.jpg" alt="Certificate of Employment" class="w-full md:w-1/2 rounded-lg shadow-xl" />
+      <div class="text-gray-300 text-center md:text-left space-y-2">
+        <h4 class="text-2xl font-semibold text-white">Fast Logistics Services Corp.</h4>
+        <p class="text-sm italic text-gray-400">Certificate of Employment</p>
+        <p class="text-base">Given after + 1 year of employment as Encoder at the logistics company.</p>
+      </div>  
+    </div>
+
+    <!-- Certificate 3 -->
+    <div class="cert-card flex flex-col md:flex-row items-center md:items-start gap-8 fade-in">
+      <img src="images/Certificates/COC UMONICS.png" alt="Certificate of Completion" class="w-full md:w-1/2 rounded-lg shadow-xl" />
+      <div class="text-gray-300 text-center md:text-left space-y-2">
+        <h4 class="text-2xl font-semibold text-white">Completion</h4>
+        <p class="text-sm italic text-gray-400">Certificate of Completion</p>
+        <p class="text-base">Acknowledged for completing OJT with positive feedback and performance evaluation.</p>
+      </div>
+    </div>
+
+    <!-- Certificate 4 -->
+    <div class="cert-card flex flex-col md:flex-row-reverse items-center md:items-start gap-8 fade-in">
+      <img src="images/Certificates/EVAL UMONICS.png" alt="Certificate of Evaluation" class="w-full md:w-1/2 rounded-lg shadow-xl" />
+      <div class="text-gray-300 text-center md:text-left space-y-2">
+        <h4 class="text-2xl font-semibold text-white">Evaluation</h4>
+        <p class="text-sm italic text-gray-400">Certificate of Evaluation</p>
+        <p class="text-base">Acknowledged for completing OJT with positive feedback and performance evaluation.</p>
+      </div>
+    </div>
+  </div>
+  </section>  
+    <!-- Contact Form Section -->
+    <section id="leave-message-section" class="space-y-12 text-center max-w-2xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-100">Leave a Message</h2>
+      <form id="contactForm" class="flex flex-col space-y-6">
+        <input class="form-input p-4 bg-gray-800 border-2 border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 transition-all text-white" type="text" id="name" placeholder="Your Name (Coming Soon)" required />
+        <input class="form-input p-4 bg-gray-800 border-2 border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 transition-all text-white" type="email" id="email" placeholder="Your Email (Coming Soon)" required />
+        <textarea class="form-input p-4 bg-gray-800 border-2 border-gray-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal-500 transition-all text-white" id="message" placeholder="Your Message (Coming Soon)" rows="5" required></textarea>
+        
+        <button type="submit" class="cool-button w-full p-4 rounded-xl text-lg font-bold text-white shadow-lg bg-gradient-to-r from-teal-500 via-sky-500 to-teal-500">
+          Send Message
+        </button>
+        
+        <div id="formResponse" class="mt-4 text-center text-lg font-medium"></div>
+      </form>
+    </section>
+    
+  </main>
+  
+  <!-- Footer -->
+  <footer class="text-center py-8 text-gray-400 border-t border-gray-700 mt-24">
+    <p>© <span id="year"></span> Christian Bahan. All Rights Reserved.</p>
+  </footer>
+  
+  <!-- Swiper.js and custom scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
